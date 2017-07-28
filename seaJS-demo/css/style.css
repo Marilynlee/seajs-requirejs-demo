@@ -1,0 +1,13 @@
+h1 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: red;
+}
+
+li {
+    list-style: none;
+}
