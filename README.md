@@ -1,6 +1,7 @@
 # seajs-requirejs-demo
 There you will know the difference between seajs and requirejs!
-一个小白做的小demo,以便理解seajs和requirejs的使用，适合初学者！
+
+一个小白自己做的小demo，以便理解seajs和requirejs的使用，适合初学者！
 
 - 主页面index.html
 - 入口模块mian.js
@@ -8,7 +9,8 @@ There you will know the difference between seajs and requirejs!
 
 
 ## requirejs配置：
-1. baseUrl加载文件的根路径
+1. baseUrl
+    加载文件的根路径
     - 如果未设置baseUrl和data-main属性，则文件路径是相对与html本身；
     - 如果设置了data-main属性，则模块内引用的文件路径是相对于data-main文件；
     - 如果设置了baseUrl，则模块都是依据basrUrl设置的路径；
@@ -21,12 +23,13 @@ There you will know the difference between seajs and requirejs!
 5. waitSeconds
     下载js等待的时间，默认7秒，如果设置为0则禁用等待超时
 6. urlArgs
-    下载文件时在url后增加额外的query参数，如：` urlArgs: '_='+(new Date()).getTime() `
-
+    下载文件时在url后增加额外的query参数，如：`urlArgs: '_='+(new Date()).getTime()`
 
 ## requirejs加载机制：
 - 使用 ` appendChild() ` 将每一个依赖加载为一个script标签
 - 加载即执行
+
+
 
 
 注意：requirejs可以使用data-main属性来引入入口模块，而seajs已经取消了此属性，只能通过seajs.use来载入入口模块。
