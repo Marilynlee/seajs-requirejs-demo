@@ -26,8 +26,8 @@ There you will know the difference between seajs and requirejs!
     下载文件时在url后增加额外的query参数，如：`urlArgs: '_='+(new Date()).getTime()`
 
 ## requirejs加载机制：
-    -使用`appendChild()`将每一个依赖加载为一个script标签
-    -加载即执行
+- 使用 ` appendChild() ` 将每一个依赖加载为一个script标签
+- 加载即执行
 
 
 
